@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue;">
+    <center>
+        <div class="background">
+            <div class="mask"></div>
+            <div class="container">
+                <h1>Power of a lamp filament</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="box">
+                        Intensity:<input type="text" name="Intensity" value="{{I}}" class="intensity"></input></br>
+                    </div>
+                    <div class="box">
+                        Resistance:
+                        <input type="text" name="Resistance" value={{R}} class="resistance">
+                        </input></br>
+                    </div>
+                    <div>
+                        <div class="buttons">
+                            <input type="submit" value="Calculate" class="cal">
+                            </input>
+                            </br>
+                        </div>
+                    </div>
+                    <div class="box">
+                        Power:
+                        <input type="text" name="Power" value="{{power}}" class="power">
+                    </input></br>
+                </div>
+            </form>
+        </div>
+       </div>
+    </center>
+</body>
+</html>
